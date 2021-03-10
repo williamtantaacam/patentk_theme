@@ -765,15 +765,10 @@ function add_a_button( $content ) {
     if ( get_permalink(get_the_ID()) != 'https://patentk.com/user/' ) {
         return $content; 
     }
-	// if the user is Not A Member, pay button
-	$roles = wp_get_current_user() -> roles;
-	if($roles[0] == 'subscriber' and count($roles) == 1){
-		$content .= '<form action="https://patentk.com/registration/" method="POST">
-        <button>' . __( 'Pay Membership'  ) . '</button> </div>';
-	}else{
+
 		$content .= '<form action="https://patentk.com/registration/" method="POST">
         <button>' . __( 'Change Membership'  ) . '</button> </div>';
-	}
+
 
     return $content;
 
