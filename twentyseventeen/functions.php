@@ -797,7 +797,7 @@ function videogif($atts = [])
     $o .= '><source src="' . $wporg_atts['mp4'] . '" type="video/mp4" />';
     $o .= '<p>Your browser does not support the video element.</p></video>';
 
-    // return output
+    // return the output
     return $o;
 }
 add_shortcode( 'videogif', 'videogif' );
