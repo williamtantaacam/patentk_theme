@@ -788,7 +788,7 @@ function videogif($atts = [])
             'controls' => False
         ], $atts);
 
-    // build output
+    // build the output
     $o = '';
     $o .= '<video autoplay loop muted playsinline ';
     if ($wporg_atts['controls']) $o .= 'controls ';
