@@ -740,7 +740,7 @@ foreach($users as $user){
 		$toupdate = array('testtt' => 'Admin');
 	}
 	elseif(in_array('pms_subscription_plan_615', $user_roles) ){
-		$toupdate = array('testtt' => 'PatentK VIP Plan $999.99 / year + HST');
+		$toupdate = array('testtt' => 'PatentK VIP Plan $1799.99 / year + HST');
 	}
 	elseif(in_array('pms_subscription_plan_617', $user_roles)){
 		$toupdate = array('testtt' => 'Regular Membership $29.99 / year + HST');
